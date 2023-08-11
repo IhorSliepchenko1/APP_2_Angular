@@ -1,0 +1,37 @@
+@import "angular";
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+
+  &__info {
+    display: block;
+  }
+
+  &__name {
+    color: $medium-violet;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__profession {
+    color: $medium-violet;
+    opacity: 0.6;
+    font-family: $ff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 11px;
+  }
+
+  &__a {
+    color: $medium-violet;
+    font-family: $ff;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration-line: underline;
+  }
+}

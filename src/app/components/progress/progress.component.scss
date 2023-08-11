@@ -1,0 +1,31 @@
+@import "angular";
+
+.progress {
+  padding: 15px 0;
+
+  &__title {
+    color: $dark-purple;
+    font-family: $ff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+    span {
+      color: $dark-pink;
+      font-weight: 400;
+    }
+  }
+  &__bar {
+    border-radius: 5px;
+    background: $translucent-pink;
+    padding: 2px;
+    position: relative;
+  }
+
+  &__line {
+    border-radius: 5px;
+    background: $dark-pink;
+    width: 60%;
+    height: 4px;
+  }
+}

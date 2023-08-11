@@ -1,0 +1,23 @@
+<div class="status">
+  <div class="status__list">
+    <div
+      class="status__item"
+      *ngFor="let item of status"
+      [class._purple]="item.id == 1"
+      [class._pink]="item.id == 2"
+    >
+      <div class="icon-range">
+        <span class="material-icons">{{ item.icons }}</span>
+      </div>
+
+      <div class="status__info">
+        <div class="status__title">{{ item.title }}</div>
+        <div class="status__desc">{{ item.desc }}</div>
+      </div>
+
+      <div class="icon-arrow">
+        <span class="material-icons">{{ item.chevron }}</span>
+      </div>
+    </div>
+  </div>
+</div>

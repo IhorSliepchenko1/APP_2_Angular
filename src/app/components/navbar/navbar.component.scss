@@ -1,0 +1,23 @@
+@import "angular";
+
+.nav {
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__li {
+  }
+
+  &__a {
+    &._active {
+      .material-icons {
+        color: $purple;
+      }
+    }
+  }
+}
+.material-icons {
+  color: $gray;
+  transition: $transition;
+}

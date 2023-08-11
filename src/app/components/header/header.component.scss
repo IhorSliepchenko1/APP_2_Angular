@@ -1,0 +1,47 @@
+@import "angular";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  .material-icons {
+    cursor: pointer;
+  }
+
+  &__title {
+    color: $dark-purple;
+    text-align: center;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.header-menu {
+  position: fixed;
+  transform: translateX(120%);
+  width: 60%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: $dark-pink;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $transition;
+  &._active {
+    transform: translateX(0%);
+  }
+
+  &__ul {
+    display: grid;
+    gap: 10px;
+  }
+
+  &__a {
+    color: $light-purple;
+    font-size: 20px;
+  }
+}

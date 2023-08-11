@@ -1,0 +1,16 @@
+<header class="header">
+  <span class="material-icons" (click)="headerMenu = !headerMenu"> menu </span>
+  <div class="header__title">{{ app.title }}</div>
+  <span class="material-icons"> settings </span>
+</header>
+
+<div class="header-menu" [class._active]="headerMenu">
+  <ul class="header-menu__ul">
+    <li class="header-menu__li">
+      <a class="header-menu__a" routerLink="/">Home</a>
+    </li>
+    <li class="header-menu__li">
+      <a class="header-menu__a" routerLink="/profile">Profile</a>
+    </li>
+  </ul>
+</div>

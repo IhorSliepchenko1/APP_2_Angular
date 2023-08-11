@@ -1,0 +1,41 @@
+@import "angular";
+
+.list-strong {
+  margin-bottom: 20px;
+
+  &__text {
+    color: $medium-green;
+    background: $light-green;
+  }
+}
+.list-weak {
+  margin-bottom: 40px;
+  &__text {
+    color: $medium-pink;
+    background: $light-orange;
+  }
+}
+
+.list-strong__title,
+.list-weak__title {
+  color: $dark-purple;
+  font-family: $ff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.list-strong__item,
+.list-weak__item {
+  display: flex;
+  gap: 5px;
+}
+
+.list-weak__text,
+.list-strong__text {
+  padding: 8px 10px;
+  font-family: $ff;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 8px;
+}

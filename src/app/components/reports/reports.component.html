@@ -1,0 +1,16 @@
+<div class="reports">
+  <div class="reports__list">
+    <div
+      class="reports__item"
+      *ngFor="let item of reports"
+      [class._purple]="item.id == 1"
+      [class._green]="item.id == 2"
+      [class._red]="item.id == 3"
+      [class._pink]="item.id == 4"
+    >
+        <span class="material-icons">{{ item.icons }}</span>
+        <div class="reports__title">{{ item.title }}</div>
+        <div class="reports__desc">{{ item.desc }}</div>
+    </div>
+  </div>
+</div>
